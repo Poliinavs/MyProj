@@ -16,6 +16,7 @@ namespace WebApplication1.Controllers
 
         public ViewResult List()
         {
+            ViewBag.Category = "Some text";
             var cars = _allCars.Cars;
             return View(cars);
         }
