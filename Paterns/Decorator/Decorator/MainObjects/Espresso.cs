@@ -4,9 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Decorator.MainObjects
+namespace Decorator
 {
-    internal class Espresso
+    public class Espresso : CofeShop
     {
+        public Espresso() {
+           description = "Espresso";
+        }
+        public override double cost()
+        {
+            return 1.99;
+        }
     }
 }

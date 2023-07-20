@@ -4,9 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Decorator.MainClass
+namespace Decorator
 {
-    internal class CofeShop
+    public abstract class CofeShop //Bevarage 
     {
+      public  string description = "Uncknow coffe";
+     
+        public string getDescription() { return description; }
+        public abstract double cost();
     }
 }

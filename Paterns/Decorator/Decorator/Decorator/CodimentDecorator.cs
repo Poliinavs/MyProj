@@ -4,9 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Decorator.Decorator
+namespace Decorator
 {
-    internal class CodimentDecorator
+    public abstract class CodimentDecorator : CofeShop
     {
+        public abstract string getDescription();
+
+
     }
 }
