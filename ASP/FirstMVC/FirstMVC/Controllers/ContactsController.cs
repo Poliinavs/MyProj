@@ -11,6 +11,22 @@ namespace FirstMVC.Controllers
             return View();
         }
 
+        public IActionResult Telephone()
+        {
+            return View();
+        }
+
+
+        [HttpPost] //передача данных из формы по post
+        public IActionResult Check(Contact contact )
+        {
+            if (ModelState.IsValid) //если данные валидны 
+            {
+                return Redirect("/");
+            }
+            return View("Index"); //возвращаем шаблон index
+        }
+
     }
 
 }
