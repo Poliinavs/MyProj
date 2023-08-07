@@ -1,6 +1,10 @@
 # Compiled object files
 *.o
 *.obj
+*.csproj
+*.targets
+*.props
+*.json
 
 # Compiled dynamic-link libraries (DLL)
 *.dll
