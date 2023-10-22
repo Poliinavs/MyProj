@@ -6,12 +6,12 @@ namespace FirstMVC.Controllers
 {
     public class ContactsController:Controller
     {
-        public IActionResult Index() //при переходе на Contacts срабатывает данный метод
+        public IActionResult Index() //Contacts срабатывает данный метод
         {
             return View();
         }
 
-        public IActionResult Telephone()
+        public IActionResult Telephone()//contax/telephone
         {
             return View();
         }
